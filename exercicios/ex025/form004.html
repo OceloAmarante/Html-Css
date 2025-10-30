@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <fieldset>
             <legend>Sexo</legend>
             <input type="radio" name="sexo" id="isxmas" value="M"> 
@@ -22,6 +22,18 @@
             <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label><br>
             <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label><br>
         </fieldset>
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor">
+        </p>
+        <p>
+            <label for="inivel">Nível de Satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+        </p>
+        <p>
+            <label for="ifoto">Foto do perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
